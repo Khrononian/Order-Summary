@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,10 @@
 }
 
 body {
-    background-image: url();
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: repeat-x;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 section {
@@ -16,11 +21,7 @@ section {
 }
 
 .contain {
-    width: 900px;
-    background: grey;
-    padding: 2em 6em;
-    background-image: url(images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .card {
@@ -44,12 +45,16 @@ h2, .info {
     text-align: center;
 }
 
-h2{
+h2 {
     margin-bottom: 1rem;
+    font-size: 1.9rem;
+    color:hsl(223, 47%, 23%);
 }
 
 .info {
-    color: hsl(224, 23%, 55%)
+    color: hsl(224, 23%, 55%);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .payment-background {
@@ -57,11 +62,17 @@ h2{
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+}
+
+.annual-column {
+    margin-right: 4.5rem;
 }
 
 .annual {
     color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: .4rem;
 }
 
 .payment {
@@ -75,19 +86,39 @@ h2{
 
 .btn {
     padding: 1em;
-    border-radius: 7px;
+    border-radius: 9px;
     border-color: transparent;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.change-link {
+    align-self: center;
     font-size: .9rem;
 }
 
+.change-link:hover {
+    opacity: .7;
+    text-decoration: unset;
+}
+
 .proceed-payment {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: white;
     background: hsl(245, 75%, 52%);
+    box-shadow: 0px 10px 25px hsl(224, 23%, 55%);
+}
+
+.proceed-payment:hover {
+    opacity: .7;
 }
 
 .cancel-payment {
     background: transparent;
     color: hsl(224, 23%, 55%);
+}
+
+.cancel-payment:hover {
+    color: black;
 }
