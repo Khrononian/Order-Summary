@@ -4,3 +4,90 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url();
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contain {
+    width: 900px;
+    background: grey;
+    padding: 2em 6em;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.card {
+    background: white;
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 17px;
+}
+
+.card-background {
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    width: 450px;
+}
+
+.inner-card {
+    padding: 2em 3em;
+}
+
+h2, .info {
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.info {
+    color: hsl(224, 23%, 55%)
+}
+
+.payment-background {
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    margin: 2rem 0;
+}
+
+.annual {
+    color: hsl(223, 47%, 23%);
+}
+
+.payment {
+    color: hsl(224, 23%, 55%);
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 1em;
+    border-radius: 7px;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.proceed-payment {
+    margin-bottom: 1rem;
+    color: white;
+    background: hsl(245, 75%, 52%);
+}
+
+.cancel-payment {
+    background: transparent;
+    color: hsl(224, 23%, 55%);
+}
